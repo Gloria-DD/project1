@@ -14,4 +14,4 @@
  4) 해당 가상환경에 설치된 목록 확인 : pip list / pip freeze
  5) 패키지 리스트업 : pip freeze > requirements.txt
  6) 다른 가상환경에서 패키지 리스트 설치 : pip install -r ./envA/requirements.txt
- 
+ ?
