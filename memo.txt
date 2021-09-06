@@ -1,0 +1,17 @@
+1. Ubuntu에서 Python 버전 변경 방법
+ 1) sudo update-alternatives --config python 
+   : 확인
+ 2) sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+    sudo update-alternatives --install (which python현재 경로) python 변경할파이썬버전대상 숫자
+ 3) sudo update-alternatives --config python 에서 사용할 파이썬 선택
+ 4) python --version 
+   : 확인
+   
+2. Python venv 사용방법
+ 1) 생성 : python3 -m venv envA
+ 2) 사용 : source envA/bin/activate
+ 3) 해제 : deactivate
+ 4) 해당 가상환경에 설치된 목록 확인 : pip list / pip freeze
+ 5) 패키지 리스트업 : pip freeze > requirements.txt
+ 6) 다른 가상환경에서 패키지 리스트 설치 : pip install -r ./envA/requirements.txt
+ 
